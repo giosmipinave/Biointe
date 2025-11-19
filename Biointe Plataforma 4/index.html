@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biointe - Marketplace para Emprendedores</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="autor" content="Giosmi Pinave">
+    <meta name="contenido" content="Multienlace">
+    <meta name="description" content="Marketplace para desarrollo personal y profesional">
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="images/00 ima Logos/Favicon Biointe - 1080x1080.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header_section" id="header">
+        <!-- Primera fila del header: Logo + Nav + Botones -->
+        <div class="header-top">
+            <!-- Logo -->
+            <div class="logo_container">
+                <img class="ima_logo" src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=200&h=200&fit=crop" alt="Logo_Biointe">       
+                <div class="logo_text">
+                    <a class="nombre_de_la_marca" href="index.html">Biointe<span class="site_name">.com</span></a>
+                    <p class="logo_description">Desarrollo personal y profesional</p>	
+                </div>
+            </div>
+
+            <!-- Navegación principal -->
+            <nav class="nav-menu">
+                <ul class="menu">          
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="pages/acerca-de.html">ℹ️ Acerca de</a></li>
+                    <li><a href="pages/servicios.html">⚡ Servicios</a></li>
+                    <li><a href="pages/contacto.html">📞 Contacto</a></li>
+                    <li><a href="pages/academia.html">🎓 Academia</a></li>	
+                    <li><a href="pages/comunidad.html">👥 Comunidad</a></li>
+                    <li><a href="pages/blog.html">📝 Blog</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botones superiores -->
+            <div class="auth-buttons">
+                <button class="auth-btn cart-btn">🛒 <span class="cart-count">0</span></button>
+                
+                <!-- Botón de menú hamburguesa -->
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger">☰</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú desplegable de herramientas -->
+        <div class="tools-dropdown" id="toolsDropdown">
+            <div class="tools-header">
+                <h3>Mi Cuenta</h3>
+                <button class="close-menu" id="closeMenu">✕</button>
+            </div>
+            
+            <!-- Botones de Login y Registro destacados -->
+            <div class="auth-menu-buttons">
+                <button class="auth-menu-btn login-btn" id="loginBtnMenu">
+                    <span class="btn-icon">🔐</span>
+                    <span class="btn-text">Iniciar Sesión</span>
+                </button>
+                <button class="auth-menu-btn register-btn" id="registerBtnMenu">
+                    <span class="btn-icon">✨</span>
+                    <span class="btn-text">Crear Cuenta</span>
+                </button>
+            </div>
+
+            <div class="menu-divider"></div>
+
+            <ul class="tools-list">
+                <li><a href="pages/profile.html">👤 Mi Perfil</a></li>
+                <li><a href="pages/dashboard.html">📊 Dashboard</a></li>
+                <li><a href="pages/mis-cursos.html">💼 Mis Cursos</a></li>
+                <li><a href="pages/biblioteca.html">📚 Biblioteca</a></li>
+                <li><a href="pages/configuracion.html">⚙️ Configuración</a></li>
+                <li><a href="pages/objetivos.html">🎯 Objetivos</a></li>
+                <li><a href="pages/progreso.html">📈 Mi Progreso</a></li>
+                <li><a href="pages/mensajes.html">💬 Mensajes</a></li>
+                <li><a href="pages/notificaciones.html">🔔 Notificaciones</a></li>
+                <li><a href="pages/ayuda.html">❓ Ayuda</a></li>
+            </ul>
+        </div>
+
+        <!-- Categorías -->
+        <div class="menu-category-container">
+            <ul class="menu-category">
+                <li><a href="pages/cursos.html">🎓 Cursos Online</a></li>
+                <li><a href="pages/coaching.html">💼 Coaching</a></li>
+                <li><a href="pages/recursos.html">📖 Recursos</a></li>
+                <li><a href="pages/mentoria.html">🎯 Mentoría</a></li>
+                <li><a href="pages/certificaciones.html">🏆 Certificaciones</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="main_title">✨ TRANSFORMA TU FUTURO ✨</h1>
+            <p class="hero-subtitle">Desarrolla tu máximo potencial y alcanza tus metas</p>
+        </div>
+    </section>
+    
+    <!-- SLIDER INTERACTIVO -->
+    <section id="slider">
+        <h2 class="slider-title">🔥 Ofertas Destacadas del Mes</h2>
+        <div class="slider-container">
+            <button class="slider-arrow slider-arrow-left" id="prevSlide">❮</button>
+            
+            <div class="slider-wrapper">
+                <div class="slide-track" id="slideTrack">
+                    <div class="slide-item active">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=800&fit=crop" alt="Trabajo en equipo">
+                        <div class="slide-overlay">
+                            <span class="slide-badge">🎯 NUEVO</span>
+                            <h3>Liderazgo Transformacional</h3>
+                            <p>Desarrolla habilidades de liderazgo efectivo | 50% OFF</p>
+                            <button class="slide-btn">📚 Ver Curso</button>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=800&fit=crop" alt="Emprendimiento">
+                        <div class="slide-overlay">
+                            <span class="slide-badge">⭐ POPULAR</span>
+                            <h3>Programa Emprendedor Digital</h3>
+                            <p>De la idea al negocio rentable en 90 días</p>
+                            <button class="slide-btn">🚀 Comenzar Ahora</button>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&h=800&fit=crop" alt="Mentoría">
+                        <div class="slide-overlay">
+                            <span class="slide-badge">💎 PREMIUM</span>
+                            <h3>Mentoría Personalizada 1 a 1</h3>
+                            <p>Acompañamiento exclusivo con expertos | Solo 10 cupos</p>
+                            <button class="slide-btn">🎓 Reservar Plaza</button>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1920&h=800&fit=crop" alt="Certificación">
+                        <div class="slide-overlay">
+                            <span class="slide-badge">🏆 CERTIFICADO</span>
+                            <h3>Certificación Profesional</h3>
+                            <p>Valida tus habilidades con certificación internacional</p>
+                            <button class="slide-btn">📜 Certificarme</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="slider-arrow slider-arrow-right" id="nextSlide">❯</button>
+        </div>
+        
+        <!-- Indicadores de posición -->
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section id="featured-products">
+        <h2>⭐ Productos Destacados</h2>
+        <p class="section-subtitle">Lo mejor de nuestra plataforma para impulsar tu crecimiento</p>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=400&h=300&fit=crop" alt="Liderazgo" class="product-img">
+                <div class="product-icon">🎯</div>
+                <h3>Curso de Liderazgo</h3>
+                <p>Desarrolla habilidades directivas excepcionales</p>
+                <span class="price">$99.99</span>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=300&fit=crop" alt="Emprendimiento" class="product-img">
+                <div class="product-icon">💼</div>
+                <h3>Programa Emprendedor</h3>
+                <p>De la idea al negocio exitoso paso a paso</p>
+                <span class="price">$149.99</span>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Mentoría" class="product-img">
+                <div class="product-icon">🎓</div>
+                <h3>Mentoría Personalizada</h3>
+                <p>Acompañamiento profesional uno a uno</p>
+                <span class="price">$199.99</span>
+            </div>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop" alt="Herramientas" class="product-img">
+                <div class="product-icon">📊</div>
+                <h3>Herramientas Business</h3>
+                <p>Kit completo de productividad empresarial</p>
+                <span class="price">$79.99</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS DE PRODUCTOS -->
+    <section id="categories_products">
+        <div class="categories_item">
+            <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1200&h=400&fit=crop" alt="Desarrollo Personal" class="category-banner">
+            <h2>🧘 Desarrollo Personal</h2>
+            <p>Descubre las herramientas para potenciar tu crecimiento personal y alcanzar tus metas de vida</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-icon">🧘</div>
+                    <h3>Mindfulness</h3>
+                    <p>Encuentra tu equilibrio interior</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">💪</div>
+                    <h3>Hábitos Exitosos</h3>
+                    <p>Construye tu mejor versión</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🎨</div>
+                    <h3>Creatividad</h3>
+                    <p>Desbloquea tu potencial creativo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories_item">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&h=400&fit=crop" alt="Desarrollo Profesional" class="category-banner">
+            <h2>💼 Desarrollo Profesional</h2>
+            <p>Impulsa tu carrera con nuestros programas especializados y certificaciones reconocidas internacionalmente</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-icon">💻</div>
+                    <h3>Skills Digitales</h3>
+                    <p>Domina las herramientas tech del futuro</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">📈</div>
+                    <h3>Finanzas Personales</h3>
+                    <p>Gestiona y multiplica tu patrimonio</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🗣️</div>
+                    <h3>Comunicación Efectiva</h3>
+                    <p>Expresa tu mensaje con impacto</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories_item">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&h=400&fit=crop" alt="Comunidad" class="category-banner">
+            <h2>👥 Comunidad Premium</h2>
+            <p>Únete a nuestra red global de emprendedores y profesionales de alto rendimiento</p>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-icon">👥</div>
+                    <h3>Networking</h3>
+                    <p>Conecta con líderes globales</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">🎤</div>
+                    <h3>Eventos Exclusivos</h3>
+                    <p>Acceso VIP a masterclasses</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon">📖</div>
+                    <h3>Biblioteca Digital</h3>
+                    <p>Recursos ilimitados premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER INTERACTIVO -->
+    <footer class="footer-section">
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>📧 ¡Únete a nuestra comunidad!</h2>
+                <p>Recibe contenido exclusivo, ofertas especiales y tips de crecimiento personal</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirme Gratis</button>
+                </form>
+                <p class="newsletter-note">✓ Sin spam | ✓ Contenido de valor | ✓ Cancela cuando quieras</p>
+            </div>
+        </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="footer-search-container">
+            <h3>🔍 ¿Buscas algo específico?</h3>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos, cursos, recursos...">
+                <button type="button">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Contenido del footer -->
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Biointe</h3>
+                <p>Plataforma líder en desarrollo personal y profesional. Transformamos vidas a través del aprendizaje y el crecimiento continuo.</p>
+                <div class="footer-stats">
+                    <div class="stat-item">
+                        <strong>50K+</strong>
+                        <span>Estudiantes</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>200+</strong>
+                        <span>Cursos</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>4.9⭐</strong>
+                        <span>Valoración</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <a href="pages/cursos.html">🎓 Cursos</a>
+                <a href="pages/academia.html">📚 Academia</a>
+                <a href="pages/blog.html">📝 Blog</a>
+                <a href="pages/comunidad.html">👥 Comunidad</a>
+                <a href="pages/testimonios.html">💬 Testimonios</a>
+                <a href="pages/preguntas-frecuentes.html">❓ Preguntas Frecuentes</a>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn facebook">📘 Facebook</a>
+                    <a href="#" class="social-btn instagram">📸 Instagram</a>
+                    <a href="#" class="social-btn linkedin">💼 LinkedIn</a>
+                    <a href="#" class="social-btn youtube">🎥 YouTube</a>
+                    <a href="#" class="social-btn twitter">🐦 Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <p>&copy; 2024 Biointe - Todos los derechos reservados | <a href="pages/privacidad.html">Política de Privacidad</a> | <a href="pages/terminos.html">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+</body>
+</html>
